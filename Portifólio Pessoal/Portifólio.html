@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio</title>
+  <link rel="shortcut icon" href="" type="x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    #wp-extension {
+      display: none;
+    }
+
+    @font-face {
+      font-family: 'header';
+      src: url(fonts/Jersey15-Regular.ttf);
+    }
+
+    @font-face {
+      font-family: 'pixel';
+      src: url(fonts/PixelifySans-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+      font-family: 'command';
+      src: url(fonts/consolas.ttf);
+    }
+
+    @keyframes subir {
+      0% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(-7px);
+      }
+      75% {
+        transform: translateY(7px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .animate-subir {
+      animation: subir 7s ease-in-out infinite;
+    }
+
+    summary::marker {
+      content: "";
+    }
+
+    @keyframes cursor {
+      0%, 100% {
+        border-color: transparent;
+      }
+      50% {
+        border-color: white;
+      }
+    }
+
+    .animate-cursor {
+      border-right: 4px solid white;
+      animation: cursor 1.5s infinite;
+    }
+
+    @keyframes blinkCursor {
+      50% {
+        border-right-color: transparent;
+      }
+    }
+
+    .animate-blinkCursor {
+      border-right: 0.2em solid green; /* Cursor */
+      animation:
+        typeAndDelete 4s steps(11) infinite,
+        blinkCursor 0.5s step-end infinite alternate;
+    }
+
+    .sobre {
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url("gifs/space.gif");
+    }
+
+    #competencias {
+      background-image: url("img/G1.svg");
+    }
+        
+  </style>
+</head>
+<body id="home" class="grid  grid-rows-[70px_auto_auto_auto_auto_auto]  gap-y-[70px] bg-[url(/gifs/space.gif)] bg-cover">
+  <header  class="grid  h-[70px] pt-[20px] px-[2%] sticky top-0 z-50 lg:px-[20%]">
+      <div class="grid grid-cols-[auto_1fr_1fr_1fr_1fr] backdrop-blur-[20px] justify-items-center items-center shadow-[0px_0px_30px] w-full gap-x-[10px] h-full border-solid border-[2px] border-[#8080808a] rounded-[10px] bg-black px-[1%] lg:px-[15px]">
+        <a href="#home"><img src="img/house.svg" class="grid w-[35px] col-start-1 "></a>
+        <a href="#sobre" class="text-white font-[header] text-[20px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out">Sobre</a>
+        <a href="#projetos" class="text-white font-[header] text-[20px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out">Projetos</a>
+        <a href="#competencias" class="text-white font-[header] text-[20px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out">Competencias</a>
+        <a href="#contato" class="text-white font-[header] text-[20px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out">Contato</a>
+      </div>
+  </header>
+
+  <section class="grid  h-full justify-items-center grid-rows-[auto_auto]">
+    <img src="img/Eu.svg" class="grid rounded-[100%] w-[200px] self-center justify-self-center shadow-[0_0_25px_#323232] animate-subir border-solid border-[2px] border-[#8080808a]">
+    <section class="grid h-full w-full items-center justify-items-center">
+      <h1 class="text-white font-[inter] text-[35px] font-medium">Guilherme Cava</h1>
+      <p id="sobre" class="text-[#ABABAB] font-[header] font-[350] text-[35px]">Sou um Desenvolvedor</p><p class="text-[#ABABAB] font-[pixel] text-[35px]  animate-cursor pr-[5px] ">Front-End</p>
+    </section>
+  </section>
+
+  <section class="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] rounded-[4px] bg-[#333] h-auto mx-[5%] w-auto max-w-[600px] px-[3px] pb-[3px] items-center justify-self-center">
+    <h1 class="text-[#eee] font-[monospace]  font-light text-[19px] sobre self-center ml-[5px]">Sobre</h1>
+    <section class="grid col-start-2 grid-cols-3 justify-self-end gap-x-[20px] pr-[5px] items-center">
+      <div class="h-[14px] w-[14px] rounded-full bg-[#e33]"></div>
+      <div class="h-[14px] w-[14px] rounded-full bg-[#ee0]"></div>
+      <div class="h-[14px] w-[14px] rounded-full bg-[#0b0]"></div>
+    </section>
+    <section class="bg-[#1A1A1A] grid col-span-2 justify-items-center p-[16px]">
+      <p class="text-[#0f0] text-[14px] sobre">
+        Sou desenvolvedor front-end, especializado na criação de interfaces modernas e responsivas. Meu foco é transformar ideias em projetos funcionais, priorizando sempre a performance e a usabilidade. Busco alinhar a estética com boas práticas de desenvolvimento, garantindo que cada projeto entregue seja visualmente agradável, funcional e eficiente. Estou em constante atualização, acompanhando as evoluções da web para oferecer soluções cada vez mais completas, profissionais e alinhadas às necessidades do usuário
+        <span id="projetos" class="animate-blinkCursor">final</span>
+      </p>
+    </section>
+  </section>
+
+  <section class="grid mx-[5%] justify-items-center items-center gap-y-[30px] h-auto w-auto gap-x-[30px]">
+    <h1 class="text-white font-[inter] text-[40px] row-start-1 font-medium ">Projetos</h1>
+    <a class="grid grid-rows-[auto_auto] cursor-pointer hover:scale-[1.02] duration-600 ease-in-out max-w-[370px]" href="https://guicava.github.io/Cart%C3%A3oAnivers%C3%A1rio/Anivers%C3%A1rio.html" target="_blank">
+      <img src="img/projeto1.svg" class="rounded-t-[15px]">
+      <div class="grid bg-[#1a1a1a] rounded-b-[15px] p-[20px] grid-rows-[auto_auto] gap-y-[7px]">
+        <h1 class= "text-white font-[inter] text-[23px] font-bold ">Cartão de Aniversário</h1>
+        <p class= "text-white font-[inter] text-[px] ">Cartão de aniversário digital para enviar mensagens especiais de forma online. Contém uma animação simples, uma mensagem de parabéns e elementos visuais simples e bonitos. É uma forma criativa de parabenizar alguém importante.</p>
+      </div>
+    </a>
+    
+
+  </section>
+
+  <section id="competencias" class="grid bg-[url(/img/G1.svg)] h-auto w-auto bg-cover pt-[20%] justify-items-center items-center gap-y-[50px] pb-[30%]">
+    <h1 class="text-white font-[inter] text-[40px] font-medium">Competencias</h1>
+    <section class="grid grid-cols-[1fr_1fr] sm:grid-cols-[1fr_1fr_1fr] items-center justify-items-center gap-[10px] sm:gap-[25px]">
+      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+        <img src="img/html-5-svgrepo-com.svg" class="w-[100px]">
+        <h1 class="text-white font-[inter] text-[20px] font-medium">HTML</h1>
+      </div>
+      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+        <img src="img/css-3-svgrepo-com.svg" class="w-[100px]">
+        <h1 class="text-white font-[inter] text-[20px] font-medium">CSS</h1>
+      </div>
+      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+        <img src="img/javascript-svgrepo-com.svg" class="w-[100px]">
+        <h1 class="text-white font-[inter] text-[20px] font-medium">JavaScript</h1>
+      </div>
+      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+        <img src="img/tailwind-svgrepo-com.svg" class="w-[100px]">
+        <h1 class="text-white font-[inter] text-[20px] font-medium">Tailwind</h1>
+      </div>
+      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+        <img src="img/github-svgrepo-com.svg" class="w-[100px]">
+        <h1 class="text-white font-[inter] text-[20px] font-medium">GitHub</h1>
+      </div>
+      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+        <img src="img/figma-svgrepo-com.svg" class="w-[100px]">
+        <h1 class="text-white font-[inter] text-[20px] font-medium">Figma</h1>
+      </div>
+    </section>
+  </section>
+
+  <footer id="contato" class="grid">
+
+  </footer>
+</body>
+</html>
