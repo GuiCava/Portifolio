@@ -74,7 +74,7 @@
     }
 
     .animate-blinkCursor {
-      border-right: 0.2em solid #008000; /* Cursor */
+      border-right: 0.2em solid #008000;
       animation:
         typeAndDelete 4s steps(11) infinite,
         blinkCursor 0.5s step-end infinite alternate;
@@ -90,7 +90,7 @@
 
     body {
       background-image: url("gifs/background.gif");
-      cursor: url('img/Eu.svg');
+
     }
 
     #competencias {
@@ -100,8 +100,8 @@
 
   </style>
 </head>
-<body id="home" class="grid  grid-rows-[70px_auto_auto_auto_auto_auto] bg-[url(gifs/background.gif)] bg-cover gap-y-[70px]">
-  <header  class="grid  h-[70px] pt-[20px] px-[2%] sticky top-0 z-50 lg:px-[20%]">
+<body id="home" class="grid grid-rows-[70px_auto_auto] bg-[url(gifs/background.gif)] bg-cover">
+  <header class="grid h-[70px] pt-[20px] px-[2%] sticky top-0 z-50 lg:px-[20%] w-full">
       <div class="grid grid-cols-[auto_1fr_1fr_1fr_1fr] backdrop-blur-[20px] justify-items-center items-center shadow-[0px_0px_30px] w-full gap-x-[10px] h-full border-solid border-[2px] border-[#8080808a] rounded-[10px] bg-black px-[1%] lg:px-[15px]">
         <a href="#home"><img src="img/house.svg" class="grid w-[35px] col-start-1 "></a>
         <a href="#sobre" class="text-white font-[header] text-[20px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out">Sobre</a>
@@ -111,131 +111,135 @@
       </div>
   </header>
 
-  <section class="grid  h-full justify-items-center grid-rows-[auto_auto]">
-    <img src="img/Eu.svg" class="grid rounded-[100%] w-[200px] lg:w-[300px] lg:mb-[40px] self-center justify-self-center shadow-[0_0_25px_#323232] animate-subir border-solid border-[2px] border-[#8080808a]">
-    <section class="grid h-full w-full items-center justify-items-center">
-      <h1 class="text-white font-[inter] text-[35px] font-medium">Guilherme Cava</h1>
-      <p id="sobre" class="text-[#ABABAB] font-[header] font-[350] text-[35px]">Sou um Desenvolvedor</p><p class="text-[#ABABAB] font-[pixel] text-[35px]  animate-cursor pr-[5px] ">Front-End</p>
-    </section>
-  </section>
-
-  <section class="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] rounded-[4px] bg-[#333] h-auto mx-[5%] w-auto max-w-[600px] px-[3px] pb-[3px] items-center justify-self-center">
-    <h1 class="text-[#eee] font-[monospace]  font-light text-[19px] sobre self-center ml-[5px]">Sobre</h1>
-    <section class="grid col-start-2 grid-cols-3 justify-self-end gap-x-[20px] pr-[5px] items-center">
-      <div class="h-[14px] w-[14px] rounded-full bg-[#e33]"></div>
-      <div class="h-[14px] w-[14px] rounded-full bg-[#ee0]"></div>
-      <div class="h-[14px] w-[14px] rounded-full bg-[#0b0]"></div>
-    </section>
-    <section class="bg-[#1A1A1A] grid col-span-2 justify-items-center p-[16px]">
-      <p class="text-[#0f0] text-[14px] sobre">
-        Sou desenvolvedor front-end, especializado na criação de interfaces modernas e responsivas. Meu foco é transformar ideias em projetos funcionais, priorizando sempre a performance e a usabilidade. Busco alinhar a estética com boas práticas de desenvolvimento, garantindo que cada projeto entregue seja visualmente agradável, funcional e eficiente. Estou em constante atualização, acompanhando as evoluções da web para oferecer soluções cada vez mais completas, profissionais e alinhadas às necessidades do usuário
-        <span id="projetos" class="animate-blinkCursor">final</span>
-      </p>
-    </section>
-  </section>
-
-  <section class="grid mx-[5%] justify-items-center items-center gap-y-[30px] h-auto w-auto gap-x-[30px]">
-    <h1 class="text-white font-[inter] text-[40px] row-start-1 font-medium ">Projetos</h1>
-        <a class="grid grid-rows-[auto_auto] cursor-pointer hover:scale-[1.02] duration-600 ease-in-out max-w-[370px]" href="https://guicava.github.io/Projetos/Cart%C3%A3oAnivers%C3%A1rio/" target="_blank">
-      <img src="img/projeto1.svg" class="rounded-t-[15px]">
-      <div class="grid bg-[#1a1a1a] rounded-b-[15px] p-[20px] grid-rows-[auto_auto] gap-y-[7px]">
-        <h1 class= "text-white font-[inter] text-[23px] font-bold ">Cartão de Aniversário</h1>
-        <p class= "text-white font-[inter] text-[px] ">Cartão de aniversário digital para enviar mensagens especiais de forma online. Contém uma animação simples, uma mensagem de parabéns e elementos visuais simples e bonitos. É uma forma criativa de parabenizar alguém importante.</p>
-      </div>
-    </a>
-    
-
-  </section>
-
-  <section id="competencias" class="grid bg-[url(/img/G1.svg)] h-auto w-auto bg-cover pt-[20%] justify-items-center items-center gap-y-[50px] pb-[30%]">
-    <h1 class="text-white font-[inter] text-[40px] font-medium">Competências</h1>
-    <section class="grid grid-cols-[1fr_1fr] sm:grid-cols-[1fr_1fr_1fr] items-center justify-items-center gap-[10px] sm:gap-[25px]">
-      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
-        <img src="img/html-5-svgrepo-com.svg" class="w-[100px]">
-        <h1 class="text-white font-[inter] text-[20px] font-medium">HTML</h1>
-      </div>
-      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
-        <img src="img/css-3-svgrepo-com.svg" class="w-[100px]">
-        <h1 class="text-white font-[inter] text-[20px] font-medium">CSS3</h1>
-      </div>
-      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
-        <img src="img/javascript-svgrepo-com.svg" class="w-[100px]">
-        <h1 class="text-white font-[inter] text-[20px] font-medium">JavaScript</h1>
-      </div>
-      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
-        <img src="img/tailwind-svgrepo-com.svg" class="w-[100px]">
-        <h1 class="text-white font-[inter] text-[20px] font-medium">Tailwind</h1>
-      </div>
-      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
-        <img src="img/github-svgrepo-com.svg" class="w-[100px]">
-        <h1 class="text-white font-[inter] text-[20px] font-medium">GitHub</h1>
-      </div>
-      <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
-        <img src="img/figma-svgrepo-com.svg" class="w-[100px]">
-        <h1 class="text-white font-[inter] text-[20px] font-medium">Figma</h1>
-      </div>
-    </section>
-  </section>
-
-  <!--Contato-->
-  <section id="contato" class="grid grid-rows-[auto_auto_auto_auto] lg:grid-cols-[1fr_1fr] gap-y-[3%] gap-x-[3%] mx-[5%] h-auto  lg:grid-rows-[auto_auto_auto]">
-    <h1 class="text-white font-[inter] text-[40px] font-medium text-center lg:col-span-2  mb-[3%]">Contatos</h1>
-    <section class="grid grid-rows-[auto_auto_auto] grid-cols-[auto_1fr] rounded-[4px] bg-[#333] h-auto w-auto max-w-[500px] px-[3px] pb-[3px] items-center justify-self-center lg:justify-self-end lg:row-span-2">
-      <h1 class="text-[#eee] font-[monospace]  font-light text-[19px] sobre self-center ml-[5px]">...</h1>
-      <section class="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">
-          <img src="img/back.svg" class="w-[20px]">
+  <main class="grid grid-rows-[auto_auto_auto_auto_auto] lg:grid-rows-[auto_auto_auto_1300px_auto] w-full gap-y-[70px]">
+    <!--Quem sou-->
+    <section class="grid  h-full justify-items-center grid-rows-[auto_auto]">
+      <img src="img/Eu.svg" class="grid rounded-[100%] w-[200px] lg:w-[300px] lg:mb-[40px] self-center justify-self-center shadow-[0_0_25px_#323232] animate-subir border-solid border-[2px] border-[#8080808a]">
+      <section class="grid h-full w-full items-center justify-items-center">
+        <h1 class="text-white font-[inter] text-[35px] font-medium">Guilherme Cava</h1>
+        <p id="sobre" class="text-[#ABABAB] font-[header] font-[350] text-[35px]">Sou um Desenvolvedor</p><p class="text-[#ABABAB] font-[pixel] text-[35px]  animate-cursor pr-[5px] ">Front-End</p>
       </section>
-      <section class="bg-[#1A1A1A] grid col-span-2 justify-items-center">
-          <img src="gifs/Coding.gif" class="max-h-[300px] mt-[10px] mb-[10px]">
+    </section>
+
+    <!--Sobre-->
+    <section class="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] rounded-[4px] bg-[#333] h-auto mx-[5%] w-auto max-w-[600px] px-[3px] pb-[3px] items-center justify-self-center">
+      <h1 class="text-[#eee] font-[monospace]  font-light text-[19px] sobre self-center ml-[5px]">Sobre</h1>
+      <section class="grid col-start-2 grid-cols-3 justify-self-end gap-x-[20px] pr-[5px] items-center">
+        <div class="h-[14px] w-[14px] rounded-full bg-[#e33]"></div>
+        <div class="h-[14px] w-[14px] rounded-full bg-[#ee0]"></div>
+        <div class="h-[14px] w-[14px] rounded-full bg-[#0b0]"></div>
       </section>
-      <section class="bg-[#1A1A1A] grid col-span-2 justify-items-center">
-        <section class="grid grid-rows-[auto_auto]">
-          <section class="grid grid-rows-[auto_auto_auto] grid-cols-[auto_1fr] rounded-[6px] bg-[#E8E8E8] h-auto mx-[5%] w-auto  pb-[10px] items-center justify-self-center">
-            <img src="img/notes.svg" class="w-[19px] self-center">
-            <section class="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">
-              <img src="img/backBlack.svg" class="w-[20px]">
+      <section class="bg-[#1A1A1A] grid col-span-2 justify-items-center p-[16px]">
+        <p class="text-[#0f0] text-[14px] sobre">
+          Sou desenvolvedor front-end, especializado na criação de interfaces modernas e responsivas. Meu foco é transformar ideias em projetos funcionais, priorizando sempre a performance e a usabilidade. Busco alinhar a estética com boas práticas de desenvolvimento, garantindo que cada projeto entregue seja visualmente agradável, funcional e eficiente. Estou em constante atualização, acompanhando as evoluções da web para oferecer soluções cada vez mais completas, profissionais e alinhadas às necessidades do usuário
+          <span id="projetos" class="animate-blinkCursor">final</span>
+        </p>
+      </section>
+    </section>
+
+    <!--Projetos-->
+    <section class="grid mx-[5%] justify-items-center items-center gap-y-[30px] h-auto w-auto gap-x-[30px]">
+      <h1 class="text-white font-[inter] text-[40px] row-start-1 font-medium ">Projetos</h1>
+          <a class="grid grid-rows-[auto_auto] cursor-pointer hover:scale-[1.02] duration-600 ease-in-out max-w-[370px]" href="https://guicava.github.io/Projetos/Cart%C3%A3oAnivers%C3%A1rio" target="_blank">
+        <img src="img/projeto1.svg" class="rounded-t-[15px]">
+        <div class="grid bg-[#1a1a1a] rounded-b-[15px] p-[20px] grid-rows-[auto_auto] gap-y-[7px]">
+          <h1 class= "text-white font-[inter] text-[23px] font-bold ">Cartão de Aniversário</h1>
+          <p class= "text-white font-[inter] text-[px] ">Cartão de aniversário digital para enviar mensagens especiais de forma online. Contém uma animação simples, uma mensagem de parabéns e elementos visuais simples e bonitos. É uma forma criativa de parabenizar alguém importante.</p>
+        </div>
+      </a>
+    </section>
+
+    <!--Competências-->
+    <section id="competencias" class="grid bg-[url(/img/G1.svg)] h-auto w-auto bg-cover pt-[20%] justify-items-center items-center gap-y-[50px] pb-[30%]">
+      <h1 class="text-white font-[inter] text-[40px] font-medium">Competências</h1>
+      <section class="grid grid-cols-[1fr_1fr] sm:grid-cols-[1fr_1fr_1fr] items-center justify-items-center gap-[10px] sm:gap-[25px]">
+        <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+          <img src="img/html-5-svgrepo-com.svg" class="w-[100px]">
+          <h1 class="text-white font-[inter] text-[20px] font-medium">HTML</h1>
+        </div>
+        <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+          <img src="img/css-3-svgrepo-com.svg" class="w-[100px]">
+          <h1 class="text-white font-[inter] text-[20px] font-medium">CSS3</h1>
+        </div>
+        <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+          <img src="img/javascript-svgrepo-com.svg" class="w-[100px]">
+          <h1 class="text-white font-[inter] text-[20px] font-medium">JavaScript</h1>
+        </div>
+        <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+          <img src="img/tailwind-svgrepo-com.svg" class="w-[100px]">
+          <h1 class="text-white font-[inter] text-[20px] font-medium">Tailwind</h1>
+        </div>
+        <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+          <img src="img/github-svgrepo-com.svg" class="w-[100px]">
+          <h1 class="text-white font-[inter] text-[20px] font-medium">GitHub</h1>
+        </div>
+        <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
+          <img src="img/figma-svgrepo-com.svg" class="w-[100px]">
+          <h1 class="text-white font-[inter] text-[20px] font-medium">Figma</h1>
+        </div>
+      </section>
+    </section>
+
+    <!--Contato-->
+    <section id="contato" class="grid grid-rows-[auto_auto_auto_auto] lg:grid-cols-[1fr_1fr] gap-y-[3%] gap-x-[3%] mx-[5%] h-auto  lg:grid-rows-[auto_auto_auto]">
+      <h1 class="text-white font-[inter] text-[40px] font-medium text-center lg:col-span-2  mb-[3%]">Contatos</h1>
+      <section class="grid grid-rows-[auto_auto_auto] grid-cols-[auto_1fr] rounded-[4px] bg-[#333] h-auto w-auto max-w-[500px] px-[3px] pb-[3px] items-center justify-self-center lg:justify-self-end lg:row-span-2">
+        <h1 class="text-[#eee] font-[monospace]  font-light text-[19px] sobre self-center ml-[5px]">...</h1>
+        <section class="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">
+            <img src="img/back.svg" class="w-[20px]">
+        </section>
+        <section class="bg-[#1A1A1A] grid col-span-2 justify-items-center">
+            <img src="gifs/Coding.gif" class="max-h-[300px] mt-[10px] mb-[10px]">
+        </section>
+        <section class="bg-[#1A1A1A] grid col-span-2 justify-items-center">
+          <section class="grid grid-rows-[auto_auto]">
+            <section class="grid grid-rows-[auto_auto_auto] grid-cols-[auto_1fr] rounded-[6px] bg-[#E8E8E8] h-auto mx-[5%] w-auto  pb-[10px] items-center justify-self-center">
+              <img src="img/notes.svg" class="w-[19px] self-center">
+              <section class="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">
+                <img src="img/backBlack.svg" class="w-[20px]">
+              </section>
+              <section class="bg-white grid col-span-2 justify-items-center h-full px-[20px] pt-[20px]">
+                <p class="text-[14px] sobre">
+                  Estou a disposição de quem qualquer um, seja para dúvidas, parcerias, novas oportunidades e etc. Entre em contato por qualquer um dos meios a <span id="projetos" class="animate-blinkCursor">seguir.</span>
+                </p>  
+              </section>          
             </section>
-            <section class="bg-white grid col-span-2 justify-items-center h-full px-[20px] pt-[20px]">
-              <p class="text-[14px] sobre">
-                Estou a disposição de quem qualquer um, seja para dúvidas, parcerias, novas oportunidades e etc. Entre em contato por qualquer um dos meios a <span id="projetos" class="animate-blinkCursor">seguir.</span>
-              </p>  
-            </section>          
           </section>
         </section>
       </section>
-    </section>
-    <section class="grid grid-rows-[auto_auto]">
-      <section class="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] rounded-[6px] bg-[#E8E8E8] h-auto w-full max-w-[500px]  items-center justify-self-center lg:justify-self-start">
-        <img src="img/file.svg" class="w-[19px] self-center">
-        <section class="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">
-          <img src="img/backBlack.svg" class="w-[20px]">
+      <section class="grid grid-rows-[auto_auto]">
+        <section class="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] rounded-[6px] bg-[#E8E8E8] h-auto w-full max-w-[500px]  items-center justify-self-center lg:justify-self-start">
+          <img src="img/file.svg" class="w-[19px] self-center">
+          <section class="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">
+            <img src="img/backBlack.svg" class="w-[20px]">
+          </section>
+          <section class="bg-white grid col-span-2 grid-cols-[auto_1fr] justify-items-center h-full pt-[20px] pb-[10px] rounded-b-[4px] pl-[15px] gap-x-[17px] gap-y-[10px]">
+            <img src="img/zap.svg" class="grid w-[50px] col-start-1 row-start-1">
+            <div class="grid grid-rows-[auto_auto] col-start-2 justify-items-start justify-self-start">
+              <h1 class="font-semibold">WhatsApp</h1>
+              <p>+55 11 94844-6267</p>
+            </div>
+            <img src="img/email.svg" class="grid w-[50px] col-start-1 row-start-2">
+            <div class="grid grid-rows-[auto_auto] col-start-2 justify-items-start justify-self-start">
+              <h1 class="font-semibold">Email Pessoal</h1>
+              <p>guicava.2017@gmail.com</p>
+            </div>
+          </section>          
         </section>
-        <section class="bg-white grid col-span-2 grid-cols-[auto_1fr] justify-items-center h-full pt-[20px] pb-[10px] rounded-b-[4px] pl-[15px] gap-x-[17px] gap-y-[10px]">
-          <img src="img/zap.svg" class="grid w-[50px] col-start-1 row-start-1">
-          <div class="grid grid-rows-[auto_auto] col-start-2 justify-items-start justify-self-start">
-            <h1 class="font-semibold">WhatsApp</h1>
-            <p>+55 11 94844-6267</p>
-          </div>
-          <img src="img/email.svg" class="grid w-[50px] col-start-1 row-start-2">
-          <div class="grid grid-rows-[auto_auto] col-start-2 justify-items-start justify-self-start">
-            <h1 class="font-semibold">Email Pessoal</h1>
-            <p>guicava.2017@gmail.com</p>
-          </div>
-        </section>          
+      </section>
+      <section class="grid grid-rows-[auto_auto]">
+        <section class="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] pb-[3px] rounded-[6px] lg: bg-[#E8E8E8] h-auto w-full max-w-[500px]  items-center justify-self-center lg:justify-self-start">
+          <img src="img/maps.svg" class="w-[19px] self-center">
+          <section class="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">
+            <img src="img/backBlack.svg" class="w-[20px]">
+          </section>
+          <a href="https://maps.app.goo.gl/pzm9ndJJANf3DL6Y9" target="_blank" class="w-full grid col-span-2 px-[3px]"><img src="img/mapa.svg" class="rounded-b-[4px] hover:scale-[1.01] duration-600 ease-in-out"></a>
       </section>
     </section>
-    <section class="grid grid-rows-[auto_auto]">
-      <section class="grid grid-rows-[auto_auto] grid-cols-[auto_1fr] pb-[3px] rounded-[6px] lg: bg-[#E8E8E8] h-auto w-full max-w-[500px]  items-center justify-self-center lg:justify-self-start">
-        <img src="img/maps.svg" class="w-[19px] self-center">
-        <section class="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">
-          <img src="img/backBlack.svg" class="w-[20px]">
-        </section>
-        <a href="https://maps.app.goo.gl/pzm9ndJJANf3DL6Y9" target="_blank" class="w-full grid col-span-2 px-[3px]"><img src="img/mapa.svg" class="rounded-b-[4px] hover:scale-[1.01] duration-600 ease-in-out"></a>
-    </section>
-  </section>
+  </main>
 
-  <footer class="grid h-auto p-[40px] gap-y-[20px] w-full lg:col-span-2 mt-[50px]">
-    <p class="text-white text-center">® Copyright <span class="font-bold">Guilherme Cava</span> Todos os direitos reservador</p>
+  <footer class="grid h-auto p-[40px] gap-y-[20px] w-full mt-[50px]">
+    <p class="text-white text-center">® Copyright <b><i>Guilherme Cava</i></b> Todos os direitos reservador</p>
     <div class="flex justify-self-center gap-x-[20px]">
       <a href="https://www.instagram.com/guilherguiz_/" target="_blank" class="grid justify-self-center hover:scale-[1.05] duration-300 ease-in-out"><img src="img/instagram.svg" class="w-[35px]"></a>
       <a href="https://www.linkedin.com/in/guilhermecava" target="_blank" class="grid justify-self-center hover:scale-[1.05] duration-300 ease-in-out"><img src="img/linkedin.svg" class="w-[40px]"></a>
