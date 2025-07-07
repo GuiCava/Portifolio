@@ -102,13 +102,13 @@
 </head>
 <body id="home" class="grid grid-rows-[70px_auto_auto] bg-[url(gifs/background.gif)] bg-cover">
   <header class="grid h-[70px] pt-[20px] px-[2%] sticky top-0 z-50 lg:px-[20%] w-full">
-      <div class="grid grid-cols-[auto_1fr_1fr_1fr_1fr] backdrop-blur-[20px] justify-items-center items-center shadow-[0px_0px_30px] w-full gap-x-[10px] h-full border-solid border-[2px] border-[#8080808a] rounded-[10px] bg-black px-[1%] lg:px-[15px]">
+      <nav class="grid grid-cols-[auto_1fr_1fr_1fr_1fr] backdrop-blur-[20px] justify-items-center items-center shadow-[0px_0px_30px] w-full gap-x-[10px] h-full border-solid border-[2px] border-[#8080808a] rounded-[10px] bg-black px-[1%] lg:px-[15px]">
         <a href="#home"><img src="img/house.svg" class="grid w-[35px] col-start-1 "></a>
         <a href="#sobre" class="text-white font-[header] text-[20px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out">Sobre</a>
         <a href="#projetos" class="text-white font-[header] text-[20px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out">Projetos</a>
         <a href="#competencias" class="text-white font-[header] text-[20px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out">Competências</a>
         <a href="#contato" class="text-white font-[header] text-[20px] hover:underline hover:scale-[1.05] cursor-pointer duration-200 ease-in-out">Contatos</a>
-      </div>
+      </nav>
   </header>
 
   <main class="grid grid-rows-[auto_auto_auto_auto_auto] lg:grid-rows-[auto_auto_auto_1300px_auto] w-full gap-y-[70px]">
@@ -138,19 +138,45 @@
     </section>
 
     <!--Projetos-->
-    <section class="grid mx-[5%] justify-items-center items-center gap-y-[30px] h-auto w-auto gap-x-[30px]">
-      <h1 class="text-white font-[inter] text-[40px] row-start-1 font-medium ">Projetos</h1>
-          <a class="grid grid-rows-[auto_auto] cursor-pointer hover:scale-[1.02] duration-600 ease-in-out max-w-[370px]" href="https://guicava.github.io/Projetos/Cart%C3%A3oAnivers%C3%A1rio" target="_blank">
-        <img src="img/projeto1.svg" class="rounded-t-[15px]">
-        <div class="grid bg-[#1a1a1a] rounded-b-[15px] p-[20px] grid-rows-[auto_auto] gap-y-[7px]">
-          <h1 class= "text-white font-[inter] text-[23px] font-bold ">Cartão de Aniversário</h1>
-          <p class= "text-white font-[inter] text-[px] ">Cartão de aniversário digital para enviar mensagens especiais de forma online. Contém uma animação simples, uma mensagem de parabéns e elementos visuais simples e bonitos. É uma forma criativa de parabenizar alguém importante.</p>
+    <section class="grid mx-[5%] grid-rows-[auto_auto_auto] justify-items-center items-center gap-y-[30px] h-auto w-auto ">
+      <h1 class="grid text-white font-[inter] text-[40px] font-medium">Projetos</h1>
+      <section class="grid justify-items-center lg:grid-cols-3 gap-x-[30px] gap-y-[30px]">
+        <a class="grid grid-rows-[auto_auto] lg:grid-rows-[auto_273.5px] cursor-pointer hover:scale-[1.02] duration-600 ease-in-out max-w-[370px]" href="https://guicava.github.io/Projetos/Cart%C3%A3oAnivers%C3%A1rio" target="_blank">
+          <img src="img/projeto1.svg" class="rounded-t-[15px]">
+          <div class="grid bg-[#1a1a1a] rounded-b-[15px] p-[20px] grid-rows-[auto_auto] gap-y-[7px] ">
+            <h1 class= "text-white font-[inter] text-[23px] font-bold ">Cartão de Aniversário</h1>
+            <p class= "text-white font-[inter] text-[px] ">Cartão de aniversário digital para enviar mensagens especiais de forma online. Contém uma animação simples, uma mensagem de parabéns e elementos visuais simples e bonitos. É uma forma criativa de parabenizar alguém importante ou que você ame.</p>
+          </div>
+        </a>
+        <a class="grid grid-rows-[auto_auto] lg:grid-rows-[auto_273.5px] cursor-pointer hover:scale-[1.02] duration-600 ease-in-out max-w-[370px]" href="https://guicava.github.io/Projetos/Wikipedia" target="_blank">
+          <img src="img/projeto2.svg" class="rounded-t-[15px]">
+          <div class="grid bg-[#1a1a1a] rounded-b-[15px] p-[20px] grid-rows-[auto_auto] gap-y-[7px] ">
+            <h1 class= "text-white font-[inter] text-[23px] font-bold ">Wikipédia</h1>
+            <p class= "text-white font-[inter] text-[px] ">Um clone simples da Wikipédia. Contém tags semânticas e acessibilidade. Tive esse cuidado pensando em pessoas que possuem deficiência visual, afim de introduzir uma experiência confortável para todos.</p>
+          </div>
+        </a>
+        <a class="grid grid-rows-[auto_auto] lg:grid-rows-[auto_273.5px] cursor-pointer hover:scale-[1.02] duration-600 ease-in-out max-w-[370px]" href="https://guicava.github.io/Projetos/CloneDiscord" target="_blank">
+          <img src="img/projeto3.svg" class="rounded-t-[15px]">
+          <div class="grid bg-[#1a1a1a] rounded-b-[15px] p-[20px] grid-rows-[auto_auto] gap-y-[7px]">
+            <h1 class= "text-white font-[inter] text-[23px] font-bold ">Discord</h1>
+            <p class= "text-white font-[inter] text-[px] ">Um clone simples da página index do Discord. Essa página foi feita com o intuito de estender meus projetos, praticar e melhorar minhas habilidades com CSS e Tailwind.</p>
+          </div>
+        </a>
+      </section>
+      <a href="https://github.com/GuiCava/Projetos" target="_blank" class="group">
+        <div class="flex bg-gray-900 rounded-full w-auto h-20 items-center justify-items-center lg:scale-[1.10] lg:mt-5 lg:hover:bg-gray-950 transition-colors duration-300 ease-in-out">
+          <img src="img/github-svgrepo-com.svg" class="grid max-w-20 pl-5">
+          <h3 class="text-white font-[header] text-[20px] pl-3 pr-5">Repositório GitHub</h3>
+        </div>
+
+        <div class="absolute ml-5.5 mt-8 bg-gray-900 text-white font-[header] text-[16px] rounded px-3 py-1 opacity-0 pointer-events-none transition-opacity duration-300 lg:group-hover:opacity-100">
+          Clique para ver meus projetos!
         </div>
       </a>
     </section>
 
     <!--Competências-->
-    <section id="competencias" class="grid bg-[url(/img/G1.svg)] h-auto w-auto bg-cover pt-[20%] justify-items-center items-center gap-y-[50px] pb-[30%]">
+    <section id="competencias" class="grid bg-[url(/img/G1.svg)] h-auto w-auto bg-cover pt-[20%] justify-items-center items-center gap-y-[50px] pb-[30%] lg:border-solid lg:border-[4px] lg:border-[#8080808a] lg:border-x-0 lg:border-t-0">
       <h1 class="text-white font-[inter] text-[40px] font-medium">Competências</h1>
       <section class="grid grid-cols-[1fr_1fr] sm:grid-cols-[1fr_1fr_1fr] items-center justify-items-center gap-[10px] sm:gap-[25px]">
         <div class="grid bg-black rounded-[5px] sm:h-[180px] sm:w-[180px] justify-items-center items-center py-[20px] w-[150px] h-[150px]">
@@ -233,12 +259,12 @@
           <section class="grid col-start-2  justify-self-end gap-x-[20px] pr-[5px] items-center">
             <img src="img/backBlack.svg" class="w-[20px]">
           </section>
-          <a href="https://maps.app.goo.gl/pzm9ndJJANf3DL6Y9" target="_blank" class="w-full grid col-span-2 px-[3px]"><img src="img/mapa.svg" class="rounded-b-[4px] hover:scale-[1.01] duration-600 ease-in-out"></a>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117134.38445216468!2d-46.54782921295016!3d-23.44424472130243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef53fb1b5e26d%3A0x974ce18d22c3555b!2sGuarulhos%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1750192172398!5m2!1spt-BR!2sbr" width="300" height="270" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full grid col-span-2 px-[3px] "></iframe>
       </section>
     </section>
   </main>
 
-  <footer class="grid h-auto p-[40px] gap-y-[20px] w-full mt-[50px]">
+  <footer class="grid h-auto p-[40px] gap-y-[20px] w-full mt-[90px]">
     <p class="text-white text-center">® Copyright <b><i>Guilherme Cava</i></b> Todos os direitos reservador</p>
     <div class="flex justify-self-center gap-x-[20px]">
       <a href="https://www.instagram.com/guilherguiz_/" target="_blank" class="grid justify-self-center hover:scale-[1.05] duration-300 ease-in-out"><img src="img/instagram.svg" class="w-[35px]"></a>
